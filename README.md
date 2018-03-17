@@ -40,6 +40,18 @@ This fictitious project is part of a larger plan to reuse templates for multiple
 
 We look forward to seeing what you can do. Remember, although it is a test, there are no specific right or wrong answers that we are looking for - just do the job as best you can. Any questions - create an issue in the panel on the right (requires a Github account).
 
+## Solution
+This is web api written in java using [spark framework][http://sparkjava.com/] 
 
-## Demo
-![screen shot](https://user-images.githubusercontent.com/8668661/33088863-330b4250-ceef-11e7-9e9c-b4fd9ca299d8.gif)
+### Setup
+
+1. clone repo
+2. run `gradle build`
+3. use `gradle run` to startup the server
+
+### Endpoints
+root: `localhost:4567`
+1. `/influencers` gets 50 random users that have follower between 1,000 & 5,000 and extracts the handle, name and number of followers. These detals are added to the [google sheet][https://docs.google.com/spreadsheets/d/1I5jwJujJjyT6LDoEKUs_bNIf4dTVjlRrb1V7HncMJ4Q/edit#gid=0]
+2. `/trends/:tags` gets 50 random sets of tweets and extracts from each the users's handle, name and number of followers. These detals are added to the [google sheet][https://docs.google.com/spreadsheets/d/1I5jwJujJjyT6LDoEKUs_bNIf4dTVjlRrb1V7HncMJ4Q/edit#gid=0]
+3. `/user/{handle}` gets detals of a user with the handle passed in the path
+4. `/stop` : stops the spark server 
