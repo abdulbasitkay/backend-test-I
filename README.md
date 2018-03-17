@@ -51,7 +51,10 @@ This is web api written in java using [spark framework][http://sparkjava.com/]
 
 ### Endpoints
 root: `localhost:4567`
-1. `/influencers` gets 50 random users that have follower between 1,000 & 5,000 and extracts the handle, name and number of followers. These detals are added to the [google sheet][https://docs.google.com/spreadsheets/d/1I5jwJujJjyT6LDoEKUs_bNIf4dTVjlRrb1V7HncMJ4Q/edit#gid=0]
-2. `/trends/:tags` gets 50 random sets of tweets and extracts from each the users's handle, name and number of followers. These detals are added to the [google sheet][https://docs.google.com/spreadsheets/d/1I5jwJujJjyT6LDoEKUs_bNIf4dTVjlRrb1V7HncMJ4Q/edit#gid=0]
+1. `/influencers` gets 50 random users that have follower between 1,000 & 5,000 and extracts the handle, name and number of followers. These detals are added to the [google sheet](https://docs.google.com/spreadsheets/d/1I5jwJujJjyT6LDoEKUs_bNIf4dTVjlRrb1V7HncMJ4Q/edit#gid=0)
+2. `/trends/:tags` gets 50 random sets of tweets and extracts from each the users's handle, name and number of followers. These detals are added to the [google sheet](https://docs.google.com/spreadsheets/d/1I5jwJujJjyT6LDoEKUs_bNIf4dTVjlRrb1V7HncMJ4Q/edit#gid=0)
 3. `/user/{handle}` gets detals of a user with the handle passed in the path
 4. `/stop` : stops the spark server 
+
+### screencast
+[screencast](https://github.com/abdulbasitkay/backend-test-I/blob/master/screen_cast.gif)
